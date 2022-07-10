@@ -104,7 +104,7 @@ jobs:
           cp user_overrides.yml netboot/
       - name: Build the code
         env:
-          EXTRA_VARS = "--extra-vars '@script/netbootxyz-overrides.yml'"
+          EXTRA_VARS: "--extra-vars '@script/netbootxyz-overrides.yml'"
         working-directory: netboot
         run: ansible-playbook -i inventory site.yml --extra-vars ${EXTRA_VARS}
       - name: 'Upload Artifact'
