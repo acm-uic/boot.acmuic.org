@@ -47,3 +47,6 @@ early_menu_contents: |
    # console --x 1024 --y 768
    # console --picture https://boot.netboot.xyz/logo.png
 netbootxyz_root: buildout
+
+bootloader_disks:
+  - acmuic.boot
