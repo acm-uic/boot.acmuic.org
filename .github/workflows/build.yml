@@ -111,7 +111,7 @@ jobs:
         env:
           EXTRA_VARS: "--extra-vars '@script/netbootxyz-overrides.yml'"
         working-directory: netboot
-        run: ansible-playbook -i inventory site.yml --extra-vars ${EXTRA_VARS}
+        run: ansible-playbook -i inventory site.yml ${EXTRA_VARS}
       - name: 'Upload Artifact'
         uses: actions/upload-artifact@v3
         with:
