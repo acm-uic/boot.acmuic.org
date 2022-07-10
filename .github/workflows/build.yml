@@ -91,7 +91,9 @@ jobs:
     needs: builder
     # https://github.com/github-community/community/discussions/17311
     # container: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}-builder
-    container: ghcr.io/clee231/boot.acmuic.org-builder
+    # Note: this also means that the container used here will only ever
+    # be the main branch build.
+    container: ghcr.io/clee231/boot.acmuic.org-builder:main
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
