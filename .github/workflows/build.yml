@@ -88,7 +88,9 @@ jobs:
         run: cosign sign ${{ steps.meta.outputs.tags }}@${{ steps.build-and-push.outputs.digest }}
   compile:
     runs-on: ubuntu-latest
-    container: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}-builder
+    # https://github.com/github-community/community/discussions/17311
+    # container: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}-builder
+    container: ghcr.io/clee231/boot.acmuic.org-builder
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
