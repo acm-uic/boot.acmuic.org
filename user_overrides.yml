@@ -46,4 +46,4 @@ early_menu_contents: |
    ### used to set early ipxe options such as custom console & logo
    # console --x 1024 --y 768
    # console --picture https://boot.netboot.xyz/logo.png
-
+  netbootxyz_root: buildout
