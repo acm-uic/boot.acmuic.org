@@ -106,7 +106,7 @@ jobs:
       - name: Apply overrides
         run: |
           rm netboot/user_overrides.yml
-          cp -r overrides/ netboot/
+          cp -r overrides/* netboot/
       - name: Build the code
         env:
           EXTRA_VARS: "--extra-vars '@script/netbootxyz-overrides.yml'"
