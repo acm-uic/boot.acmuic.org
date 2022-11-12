@@ -12,6 +12,9 @@ site_name: ACM@UIC
 # set desired boot domain
 boot_domain: boot.acmuic.org
 
+# set default boot option timeout in milliseconds
+boot_timeout: 5000
+
 # set boot version
 # boot_version: "2.x"
 
