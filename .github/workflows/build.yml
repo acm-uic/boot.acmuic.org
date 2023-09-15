@@ -93,7 +93,7 @@ jobs:
     # container: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}-builder
     # Note: this also means that the container used here will only ever
     # be the main branch build.
-    container: ghcr.io/clee231/boot.acmuic.org-builder:main
+    container: ghcr.io/acm-uic/boot.acmuic.org-builder:main
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
