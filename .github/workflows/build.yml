@@ -1,5 +1,3 @@
-uses: sigstore/cosign-installer@v3.8.1name: Builder
-
 on:
   #  schedule:
   #    - cron: '32 5 * * *'
